@@ -1,0 +1,3 @@
+New-ItemProperty -Path "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\GameDVR" -Name "AllowgameDVR" -Value "0" -PropertyType "DWord"
+New-ItemProperty -Path "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" -Name "AppCaptureEnabled" -Value "0" -PropertyType "DWord"
+New-ItemProperty -Path "HKEY_CURRENT_USER\System\GameConfigStore" -Name "GameDVR_Enabled" -Value "0" -PropertyType "DWord"
