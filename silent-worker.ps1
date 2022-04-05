@@ -1,3 +1,5 @@
+Get-AppxPackage -AllUsers Microsoft.XboxGamingOverlay | Remove-AppxPackage
+
 New-Item –Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows" –Name "GameDVR"
 Set-Itemproperty -path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR' -Name 'AllowgameDVR' -Value '0'
 New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\GameDVR" -Name "AllowgameDVR" -Value "0" -PropertyType "DWord"
